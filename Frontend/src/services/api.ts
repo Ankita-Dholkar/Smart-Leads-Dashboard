@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_API_URL || 'https://smart-leads-dashboard-h8no.onrender.com/api',
   headers: { 'Content-Type': 'application/json' },
   withCredentials: false,
 });
