@@ -7,8 +7,10 @@ class AppError extends Error {
     this.statusCode = statusCode;
     this.isOperational = true;
 
-    // Maintains proper stack trace
-    Error.captureStackTrace(this, this.constructor);
+    // Maintains proper stack trace (V8 / Node.js only)
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, this.constructor);
+    }
     Object.setPrototypeOf(this, AppError.prototype);
   }
 }
