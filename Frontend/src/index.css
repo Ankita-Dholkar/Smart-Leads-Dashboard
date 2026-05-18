@@ -1,6 +1,9 @@
-@import "tailwindcss";
-@custom-variant dark (&:is(.dark, .dark *));
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@custom-variant dark (&:is(.dark, .dark *));
+
 
 @layer base {
   :root {
