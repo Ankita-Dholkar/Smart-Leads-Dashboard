@@ -1,4 +1,4 @@
-# Smart Leads CRM
+# Smart Leads Dashboard
 
 A full-stack Customer Relationship Management (CRM) application.
 
@@ -8,6 +8,18 @@ A full-stack Customer Relationship Management (CRM) application.
 - **Backend:** Node.js, Express, TypeScript
 - **Database:** MongoDB (Atlas or Local via Docker)
 - **Deployment:** Docker & Docker Compose
+
+---
+
+## ✨ Feature Overview
+
+- **Secure Authentication:** JWT-based user login and registration system.
+- **Lead Management:** Create, read, update, and delete (CRUD) leads.
+- **Advanced Filtering & Sorting:** Quickly find leads using search, pagination, and multi-criteria filters (e.g., status, source).
+- **Role-Based Access Control (RBAC):** Admin-only actions like deleting leads.
+- **CSV Data Export:** Easily export lead data into a CSV file for reporting.
+- **Responsive Dashboard:** A modern, mobile-friendly interface built with Tailwind CSS v4.
+- **Containerized Architecture:** Fast, reproducible setups using Docker and Docker Compose.
 
 ---
 
