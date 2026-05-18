@@ -33,6 +33,6 @@
     "@types/qs": "^6.15.1",
     "nodemon": "^3.1.14",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^6.0.3"
+    "typescript": "^5.6.3"
   }
 }
