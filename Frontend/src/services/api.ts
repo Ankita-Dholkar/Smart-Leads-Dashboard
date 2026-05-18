@@ -1,7 +1,13 @@
 import axios from 'axios';
 
+let API_URL = import.meta.env.VITE_API_URL || 'https://smart-leads-dashboard-h8no.onrender.com/api';
+API_URL = API_URL.replace(/\/$/, ''); // Remove any trailing slash
+if (!API_URL.endsWith('/api')) {
+  API_URL += '/api';
+}
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://smart-leads-dashboard-h8no.onrender.com/api',
+  baseURL: API_URL,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: false,
 });
